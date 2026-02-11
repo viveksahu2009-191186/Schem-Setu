@@ -1,0 +1,7 @@
+{
+  "name": "Scheme-Setu: The Grant & Loan Matcher",
+  "description": "A 'Tinder for Government Loans' that uses AI to match Indian citizens to the exact financial schemes they qualify for based on their unique profiles.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
