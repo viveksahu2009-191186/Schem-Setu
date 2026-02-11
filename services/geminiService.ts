@@ -4,7 +4,7 @@ import { UserProfile, SchemeMatch } from "../types";
 import { SYSTEM_PROMPT, POPULAR_SCHEMES } from "../constants";
 
 export const matchSchemesWithAI = async (profile: UserProfile): Promise<SchemeMatch[]> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+  const ai = import.meta.env.VITE_API_KEY;
   
   try {
     const response = await ai.models.generateContent({
